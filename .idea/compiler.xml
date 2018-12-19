@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="all-common" />
+        <module name="all-config-server" />
+        <module name="all-db-mongodb" />
+        <module name="all-db-mysql" />
+        <module name="all-db-redis" />
+        <module name="all-generator" />
+        <module name="blog-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="all-common" target="1.8" />
+      <module name="all-config-server" target="1.8" />
+      <module name="all-db" target="1.8" />
+      <module name="all-db-mongodb" target="1.8" />
+      <module name="all-db-mysql" target="1.8" />
+      <module name="all-db-redis" target="1.8" />
+      <module name="all-generator" target="1.8" />
+      <module name="all-parent" target="1.8" />
+      <module name="blog-server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

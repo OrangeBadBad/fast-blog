@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/all-common/all-common.iml" filepath="$PROJECT_DIR$/all-common/all-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/all-config-server/all-config-server.iml" filepath="$PROJECT_DIR$/all-config-server/all-config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/all-db/all-db.iml" filepath="$PROJECT_DIR$/all-db/all-db.iml" />
+      <module fileurl="file://$PROJECT_DIR$/all-db/all-db-mongodb/all-db-mongodb.iml" filepath="$PROJECT_DIR$/all-db/all-db-mongodb/all-db-mongodb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/all-db/all-db-mysql/all-db-mysql.iml" filepath="$PROJECT_DIR$/all-db/all-db-mysql/all-db-mysql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/all-db/all-db-redis/all-db-redis.iml" filepath="$PROJECT_DIR$/all-db/all-db-redis/all-db-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/all-generator/all-generator.iml" filepath="$PROJECT_DIR$/all-generator/all-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/all-parent.iml" filepath="$PROJECT_DIR$/all-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blog-server/blog-server.iml" filepath="$PROJECT_DIR$/blog-server/blog-server.iml" />
+    </modules>
+  </component>
+</project>

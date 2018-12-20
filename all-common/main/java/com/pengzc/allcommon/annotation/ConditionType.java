@@ -1,4 +1,4 @@
-package com.pengzc.allcommon.annotation
+package com.pengzc.allcommon.annotation;
 
 
 

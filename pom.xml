@@ -17,15 +17,9 @@
     </parent>
 
     <modules>
-    <!--    <module>alldbmysql-common</module>-->
         <module>all-db</module>
         <module>all-common</module>
         <module>blog-server</module>
-        <module>all-generator</module>
-        <!--        <module>alldbmysql-config-server</module>
-                <module>alldbmysql-eureka-server</module>
-                <module>alldbmysql-customer</module>
-                <module>alldbmysql-agent</module>-->
     </modules>
 
     <properties>

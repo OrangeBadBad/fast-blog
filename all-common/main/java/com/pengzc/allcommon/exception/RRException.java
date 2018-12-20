@@ -17,12 +17,12 @@
 package com.pengzc.allcommon.exception;
 
 /**
- * 自定义异常
- * 
- * @author chenshun
- * @email sunlightcs@gmail.com
- * @date 2016年10月27日 下午10:11:27
- */
+ * RRException
+ *
+ * @author pengzc
+ * @create 2018-12-19 11:18
+ * @desc 自定义异常
+ **/
 public class RRException extends RuntimeException {
 	private static final long serialVersionUID = 1L;
 	

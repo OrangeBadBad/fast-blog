@@ -8,12 +8,11 @@ import org.slf4j.LoggerFactory;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * IP地址
- * 
- * @author chenshun
- * @email sunlightcs@gmail.com
- * @date 2017年3月8日 下午12:57:02
- */
+ * IPUtils
+ * @author pengzc
+ * @create 2018-12-19 11:18
+ * @desc 文件工具类
+ **/
 public class IPUtils {
 	private static Logger logger = LoggerFactory.getLogger(IPUtils.class);
 

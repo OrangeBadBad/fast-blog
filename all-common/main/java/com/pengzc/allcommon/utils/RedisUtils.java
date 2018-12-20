@@ -18,18 +18,20 @@ package com.pengzc.allcommon.utils;
 
 import com.alibaba.fastjson.JSON;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.*;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Redis工具类
+ * RedisUtils
  *
- * @author chenshun
- * @email sunlightcs@gmail.com
- * @date 2017-07-17 21:12
- */
+ * @author pengzc
+ * @create 2018-12-19 11:18
+ * @desc Redis工具类
+ **/
+
 @Component
 public class RedisUtils {
     @Autowired

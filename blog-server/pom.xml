@@ -35,22 +35,22 @@
             <artifactId>spring-boot-starter-freemarker</artifactId>
         </dependency>
         <!--MYSELF-->
-   <!--     &lt;!&ndash;all-common&ndash;&gt;
+        <!--all-common-->
         <dependency>
             <groupId>com.pengzc.all</groupId>
             <artifactId>all-common</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>-->
-        <!--all-db-mysql-->
-        <dependency>
-            <groupId>com.pengzc.all</groupId>
-            <artifactId>all-db-mysql</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <!--all-db-redis-->
         <dependency>
             <groupId>com.pengzc.all</groupId>
             <artifactId>all-db-redis</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!--all-db-mysql-->
+        <dependency>
+            <groupId>com.pengzc.all</groupId>
+            <artifactId>all-db-mysql</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>

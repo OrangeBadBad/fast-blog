@@ -1,4 +1,4 @@
-package com.pengzc.allcommon.utils
+package com.pengzc.allcommon.utils;
 
 
 import org.apache.commons.lang3.StringUtils;
@@ -6,7 +6,6 @@ import org.joda.time.DateTime;
 import org.joda.time.LocalDate;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
 

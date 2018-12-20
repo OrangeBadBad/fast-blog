@@ -17,7 +17,6 @@
 package com.pengzc.allcommon.xss;
 
 import com.pengzc.allcommon.config.White;
-import com.pengzc.allcommon.utils.JsoupUtil;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.http.HttpHeaders;

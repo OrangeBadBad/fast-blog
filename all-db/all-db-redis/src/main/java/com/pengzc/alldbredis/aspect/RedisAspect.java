@@ -1,7 +1,7 @@
 
-package com.pengzc.allcommon.aspect.;
+package com.pengzc.alldbredis.aspect;
 
-import com.pengzc.allcommon.exception.RRException;
+
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -25,7 +25,7 @@ public class RedisAspect {
     @Value("${freeter.redis.open: false}")
     private boolean open;
 
-    @Around("execution(* RedisUtils.*(..))")
+    @Around("execution(* com.pengzc.alldbredis.util.RedisUtils.*(..))")
     public Object around(ProceedingJoinPoint point) throws Throwable {
         Object result = null;
         if(open){
@@ -33,7 +33,7 @@ public class RedisAspect {
                 result = point.proceed();
             }catch (Exception e){
                 logger.error("redis error", e);
-                throw new RRException("Redis服务异常");
+                throw new Exception("Redis服务异常");
             }
         }
         return result;

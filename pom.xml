@@ -40,8 +40,10 @@
         <spring-cloud.version>Finchley.RC1</spring-cloud.version>
 
         <!-- 外围 spring-boot 组件 -->
+        <druid.springboot.version>1.1.9</druid.springboot.version>
+        <mybatis.springboot.version>2.2.0</mybatis.springboot.version>
 
-        <!--其他-->
+        <!---->
         <docker-maven-plugin.version>0.4.13</docker-maven-plugin.version>
         <docker.image.prefix>ason</docker.image.prefix>
         <fastjson.version>1.2.44</fastjson.version>
@@ -55,15 +57,14 @@
         <commons.collections.version>3.2</commons.collections.version>
         <commons.beanutils.version>1.9.2</commons.beanutils.version>
         <commons.codec.version>1.10</commons.codec.version>
+        <commons.lang.version>2.6</commons.lang.version>
         <commons.lang3.version>3.6</commons.lang3.version>
         <guava.version>23.0</guava.version>
         <fasterxml.jackson.core.version>2.9.5</fasterxml.jackson.core.version>
-        <!--mysql-->
+
         <druid.version>1.0.29</druid.version>
-        <druid.springboot.version>1.1.9</druid.springboot.version>
         <mysql-connector-java.version>5.1.10</mysql-connector-java.version>
         <mybatis-plus.version>2.1.8</mybatis-plus.version>
-        <mybatis.springboot.version>2.2.0</mybatis.springboot.version>
         <opentracing-mongo-driver.version>0.0.3</opentracing-mongo-driver.version>
 
     </properties>
@@ -93,6 +94,7 @@
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-context-support</artifactId>
             </dependency>
+
             <!--mysql-connector-java-->
             <dependency>
                 <groupId>mysql</groupId>
@@ -104,12 +106,6 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid-spring-boot-starter</artifactId>
                 <version>${druid.springboot.version}</version>
-            </dependency>
-            <!-- MyBatis Plus依赖 -->
-            <dependency>
-                <groupId>com.baomidou</groupId>
-                <artifactId>mybatis-plus</artifactId>
-                <version>${mybatis-plus.version}</version>
             </dependency>
             <!-- MyBatis Plus springBoot-starter依赖 -->
             <dependency>
@@ -123,11 +119,11 @@
                 <artifactId>javax.servlet-api</artifactId>
                 <version>${javax.servlet-api.version}</version>
             </dependency>
-<!--            <dependency>
+            <dependency>
                 <groupId>commons-lang</groupId>
                 <artifactId>commons-lang</artifactId>
                 <version>${commons.lang.version}</version>
-            </dependency>-->
+            </dependency>
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>

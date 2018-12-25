@@ -1,8 +1,11 @@
-package service.impl;
+package com.pengzc.blog.service.impl;
 
-import entity.SysMenu;
-import mapper.SysMenuMapper;
-import service.SysMenuService;
+
+import com.pengzc.blog.entity.SysMenu;
+import com.pengzc.blog.mapper.SysMenuMapper;
+import com.pengzc.blog.service.SysMenuService;
+
+
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

@@ -1,7 +1,8 @@
-package mapper;
+package com.pengzc.blog.mapper;
 
-import entity.BlogVisitor;
+
 import com.baomidou.mybatisplus.mapper.BaseMapper;
+import com.pengzc.blog.entity.BlogVisitor;
 
 /**
  * <p>

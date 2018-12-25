@@ -1,4 +1,4 @@
-package com.pengzc.blog.controller;
+package com.pengzc.blog.controller.blog;
 
 import com.pengzc.alldbredis.util.RedisUtils;
 import com.pengzc.blog.service.DemoService;

@@ -1,7 +1,8 @@
-package mapper;
+package com.pengzc.blog.mapper;
 
-import entity.SysMenu;
+
 import com.baomidou.mybatisplus.mapper.BaseMapper;
+import com.pengzc.blog.entity.SysMenu;
 
 /**
  * <p>

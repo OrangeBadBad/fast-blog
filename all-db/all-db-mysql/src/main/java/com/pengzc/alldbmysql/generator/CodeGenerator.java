@@ -51,7 +51,7 @@ public class CodeGenerator {
         config.setActiveRecord(true) // 是否支持AR模式
                 .setAuthor("pengzc") // 作者
                 //.setOutputDir("D:\\workspace_mp\\mp03\\src\\main\\java") // 生成路径
-                .setOutputDir("H:\\git-factory\\fast-blog\\blog-server\\src\\main\\java\\com\\pengzc\\com") // 生成路径
+                .setOutputDir("H:\\git-factory\\fast-blog\\blog-server\\src\\main\\java\\") // 生成路径
                 .setFileOverride(true)  // 文件覆盖
                 .setIdType(IdType.AUTO) // 主键策略
                 .setServiceName("%sService")  // 设置生成的service接口的名字的首字母是否为I
@@ -73,11 +73,11 @@ public class CodeGenerator {
                 .setDbColumnUnderline(true)  // 指定表名 字段名是否使用下划线
                 .setNaming(NamingStrategy.underline_to_camel) // 数据库表映射到实体的命名策略
                 //.setTablePrefix("tbl_")
-                .setInclude("blog_visitor");  // 生成的表
+                .setInclude("blog_article_tag");  // 生成的表
 
         //4. 包名策略配置
         PackageConfig pkConfig = new PackageConfig();
-        pkConfig.setParent("")
+        pkConfig.setParent("com.pengzc.blog")
                 .setMapper("mapper")//dao
                 .setService("service")//servcie
                 .setController("controller")//controller

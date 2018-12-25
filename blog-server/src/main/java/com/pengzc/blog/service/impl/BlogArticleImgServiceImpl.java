@@ -1,8 +1,8 @@
-package service.impl;
+package com.pengzc.blog.service.impl;
 
-import entity.BlogArticleImg;
-import mapper.BlogArticleImgMapper;
-import service.BlogArticleImgService;
+import com.pengzc.blog.entity.BlogArticleImg;
+import com.pengzc.blog.mapper.BlogArticleImgMapper;
+import com.pengzc.blog.service.BlogArticleImgService;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

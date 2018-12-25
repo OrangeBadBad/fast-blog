@@ -1,7 +1,8 @@
-package service;
+package com.pengzc.blog.service;
 
-import entity.BlogVisitor;
+
 import com.baomidou.mybatisplus.service.IService;
+import com.pengzc.blog.entity.BlogVisitor;
 
 /**
  * <p>

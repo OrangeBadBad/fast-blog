@@ -1,4 +1,4 @@
-package entity;
+package com.pengzc.blog.entity;
 
 import java.io.Serializable;
 

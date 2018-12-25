@@ -1,9 +1,10 @@
-package service.impl;
+package com.pengzc.blog.service.impl;
 
-import entity.BlogArticleComment;
-import mapper.BlogArticleCommentMapper;
-import service.BlogArticleCommentService;
+
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
+import com.pengzc.blog.entity.BlogArticleComment;
+import com.pengzc.blog.mapper.BlogArticleCommentMapper;
+import com.pengzc.blog.service.BlogArticleCommentService;
 import org.springframework.stereotype.Service;
 
 /**

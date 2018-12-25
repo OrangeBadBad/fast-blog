@@ -1,7 +1,8 @@
-package service;
+package com.pengzc.blog.service;
 
-import entity.SysMenu;
+
 import com.baomidou.mybatisplus.service.IService;
+import com.pengzc.blog.entity.SysMenu;
 
 /**
  * <p>

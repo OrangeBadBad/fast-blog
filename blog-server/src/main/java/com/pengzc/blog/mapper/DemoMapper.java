@@ -14,5 +14,4 @@ import com.pengzc.blog.entity.DemoEntity;
 public interface DemoMapper extends BaseMapper<DemoEntity> {
 
 
-
 }

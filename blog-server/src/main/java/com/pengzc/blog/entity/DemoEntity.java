@@ -20,10 +20,10 @@ public class DemoEntity {
     private Integer id;
 
     @TableField("name")
-    private  String  name;
+    private String name;
 
     @TableField("date")
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date date;
 
 

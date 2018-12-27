@@ -3,14 +3,14 @@
 <mapper namespace="com.pengzc.blog.mapper.BlogArticleImgMapper">
 
     <!-- 开启二级缓存 -->
-   <!-- <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>-->
+    <!-- <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>-->
 
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="com.pengzc.blog.entity.BlogArticleImg">
-        <id column="img_id" property="imgId" />
-        <result column="img_name" property="imgName" />
-        <result column="img_url" property="imgUrl" />
-        <result column="article_id" property="articleId" />
+        <id column="img_id" property="imgId"/>
+        <result column="img_name" property="imgName"/>
+        <result column="img_url" property="imgUrl"/>
+        <result column="article_id" property="articleId"/>
     </resultMap>
 
     <!-- 通用查询结果列 -->

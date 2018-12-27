@@ -1,14 +1,16 @@
-package com.pengzc.allcommon.utils;
+package com.pengzc.all.common.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.multipart.MultipartFile;
+
 import java.io.*;
 import java.util.*;
 
 
 /**
  * FileUtils
+ *
  * @author pengzc
  * @create 2018-12-19 11:18
  * @desc 文件工具类
@@ -19,9 +21,9 @@ public class FileUtils {
             .getLogger(FileUtils.class);
 
 
-
     /**
      * 文件copy方法
+     *
      * @param src
      * @param dest
      */
@@ -33,7 +35,7 @@ public class FileUtils {
                 dest.write(tmp, 0, len);
         } catch (IOException e) {
             throw new RuntimeException(e);
-        }finally {
+        } finally {
             try {
                 src.close();
                 dest.close();
@@ -44,7 +46,7 @@ public class FileUtils {
     }
 
     // 获取文 MultipartFile 文件后缀名工具
-    public static String getSuffix(MultipartFile fileupload){
+    public static String getSuffix(MultipartFile fileupload) {
         String originalFilename = fileupload.getOriginalFilename();
         String suffix = originalFilename.substring(originalFilename.lastIndexOf(".") + 1);
         return suffix;
@@ -88,7 +90,7 @@ public class FileUtils {
                 dest.write(tmp, 0, len);
         } catch (IOException e) {
             throw new RuntimeException(e);
-        }finally {
+        } finally {
             try {
                 src.close();
                 dest.close();
@@ -150,9 +152,9 @@ public class FileUtils {
             contentPath.append(now.get(Calendar.YEAR)).append(File.separator).append("0" + (now.get(Calendar.MONTH) + 1)).append("0" + now.get(Calendar.DAY_OF_MONTH));
             contentPath.append(File.separator);
             contentPath.append(fileName);
-            String tPath = filePath+contentPath.toString();
+            String tPath = filePath + contentPath.toString();
             tPath = validFilePath(tPath);
-            if("".equals(tPath)){
+            if ("".equals(tPath)) {
                 throw new IllegalArgumentException();
             }
             File pictureFile = new File(tPath);
@@ -177,7 +179,7 @@ public class FileUtils {
         return contentPath.toString();
     }
 
-    public static String validFilePath(String filepath) throws Exception{
+    public static String validFilePath(String filepath) throws Exception {
         List<String> allowedExtensions = new ArrayList<String>();
         boolean result = false;
         allowedExtensions.add(".jpg");
@@ -194,13 +196,13 @@ public class FileUtils {
         allowedExtensions.add(".bmp");
         allowedExtensions.add(".mp3");
         allowedExtensions.add(".amr");
-        for(String suf:allowedExtensions){
-            if(filepath.toLowerCase(Locale.ENGLISH).endsWith(suf)){
+        for (String suf : allowedExtensions) {
+            if (filepath.toLowerCase(Locale.ENGLISH).endsWith(suf)) {
                 result = true;
                 break;
             }
         }
-        if(!result)return "";
+        if (!result) return "";
         filepath.replaceAll("../", "");
         filepath.replaceAll("..\\\\", "");
         return filepath;

@@ -4,14 +4,11 @@ import java.io.Serializable;
 
 import com.baomidou.mybatisplus.enums.IdType;
 import com.baomidou.mybatisplus.annotations.TableId;
-import com.baomidou.mybatisplus.annotations.TableId;
-import com.baomidou.mybatisplus.enums.IdType;
 import com.baomidou.mybatisplus.activerecord.Model;
-import java.io.Serializable;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author pengzc123
@@ -104,12 +101,12 @@ public class BlogUser extends Model<BlogUser> {
     @Override
     public String toString() {
         return "BlogUser{" +
-        "id=" + id +
-        ", userName=" + userName +
-        ", nickName=" + nickName +
-        ", realName=" + realName +
-        ", tel=" + tel +
-        ", mail=" + mail +
-        "}";
+                "id=" + id +
+                ", userName=" + userName +
+                ", nickName=" + nickName +
+                ", realName=" + realName +
+                ", tel=" + tel +
+                ", mail=" + mail +
+                "}";
     }
 }

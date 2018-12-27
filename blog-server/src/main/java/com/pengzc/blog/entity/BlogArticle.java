@@ -3,16 +3,19 @@ package com.pengzc.blog.entity;
 import java.io.Serializable;
 
 import com.baomidou.mybatisplus.enums.IdType;
+
 import java.util.Date;
+
 import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.enums.IdType;
 import com.baomidou.mybatisplus.activerecord.Model;
+
 import java.io.Serializable;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author pengzc123
@@ -186,19 +189,19 @@ public class BlogArticle extends Model<BlogArticle> {
     @Override
     public String toString() {
         return "BlogArticle{" +
-        "id=" + id +
-        ", content=" + content +
-        ", title=" + title +
-        ", name=" + name +
-        ", contentHtml=" + contentHtml +
-        ", tagName=" + tagName +
-        ", categoryId=" + categoryId +
-        ", categoryName=" + categoryName +
-        ", userId=" + userId +
-        ", createTime=" + createTime +
-        ", updateTime=" + updateTime +
-        ", viewNum=" + viewNum +
-        ", commentNum=" + commentNum +
-        "}";
+                "id=" + id +
+                ", content=" + content +
+                ", title=" + title +
+                ", name=" + name +
+                ", contentHtml=" + contentHtml +
+                ", tagName=" + tagName +
+                ", categoryId=" + categoryId +
+                ", categoryName=" + categoryName +
+                ", userId=" + userId +
+                ", createTime=" + createTime +
+                ", updateTime=" + updateTime +
+                ", viewNum=" + viewNum +
+                ", commentNum=" + commentNum +
+                "}";
     }
 }

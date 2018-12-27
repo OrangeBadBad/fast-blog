@@ -22,7 +22,6 @@ public class DemoServiceImpl implements DemoService {
     private DemoMapper demoMapper;
 
 
-
     @Override
     public List<DemoEntity> getAll() {
         return demoMapper.selectList(new EntityWrapper<DemoEntity>());

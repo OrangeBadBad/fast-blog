@@ -18,7 +18,7 @@ import java.util.Scanner;
 
 /**
  * @ClassName CodeGenerator
- * @Description  代码生成Demo
+ * @Description 代码生成Demo
  * @Auth pengzc
  * @Date 2018/12/9
  **/
@@ -42,8 +42,6 @@ public class CodeGenerator {
         }
         throw new MybatisPlusException("请输入正确的" + tip + "！");
     }*/
-
-
     public static void main(String[] args) throws SQLException {
 
         //1. 全局配置
@@ -60,7 +58,7 @@ public class CodeGenerator {
                 .setBaseColumnList(true);//生成基本的SQL片段
 
         //2. 数据源配置
-        DataSourceConfig  dsConfig  = new DataSourceConfig();
+        DataSourceConfig dsConfig = new DataSourceConfig();
         dsConfig.setDbType(DbType.MYSQL)  // 设置数据库类型
                 .setDriverName("com.mysql.jdbc.Driver")
                 .setUrl("jdbc:mysql://47.95.116.247:3306/blog")
@@ -85,7 +83,7 @@ public class CodeGenerator {
                 .setXml("mapper");//mapper.xml
 
         //5. 整合配置
-        AutoGenerator  ag = new AutoGenerator();
+        AutoGenerator ag = new AutoGenerator();
         ag.setGlobalConfig(config)
                 .setDataSource(dsConfig)
                 .setStrategy(stConfig)

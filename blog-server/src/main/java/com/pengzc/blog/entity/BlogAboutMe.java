@@ -3,11 +3,12 @@ package com.pengzc.blog.entity;
 import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.enums.IdType;
 import com.baomidou.mybatisplus.activerecord.Model;
+
 import java.io.Serializable;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author pengzc
@@ -85,12 +86,12 @@ public class BlogAboutMe extends Model<BlogAboutMe> {
     @Override
     public String toString() {
         return "BlogAboutMe{" +
-        "id=" + id +
-        ", name=" + name +
-        ", introduction=" + introduction +
-        ", qqNumber=" + qqNumber +
-        ", email=" + email +
-        ", webchatNumber=" + webchatNumber +
-        "}";
+                "id=" + id +
+                ", name=" + name +
+                ", introduction=" + introduction +
+                ", qqNumber=" + qqNumber +
+                ", email=" + email +
+                ", webchatNumber=" + webchatNumber +
+                "}";
     }
 }

@@ -29,8 +29,8 @@ public class DemoController {
     @GetMapping(value = "/demo")
     public String demo(ModelMap modelmap) {
 
-        redisUtils.set("demo","demo");
-        modelmap.addAttribute("test","test");
+        redisUtils.set("demo", "demo");
+        modelmap.addAttribute("test", "test");
 
         return "hello";
     }

@@ -7,11 +7,12 @@ import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.enums.IdType;
 import com.baomidou.mybatisplus.activerecord.Model;
+
 import java.io.Serializable;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author pengzc123
@@ -68,10 +69,10 @@ public class BlogArticleCategory extends Model<BlogArticleCategory> {
     @Override
     public String toString() {
         return "BlogArticleCategory{" +
-        "categoryId=" + categoryId +
-        ", categoryName=" + categoryName +
-        ", parentId=" + parentId +
-        ", levelNo=" + levelNo +
-        "}";
+                "categoryId=" + categoryId +
+                ", categoryName=" + categoryName +
+                ", parentId=" + parentId +
+                ", levelNo=" + levelNo +
+                "}";
     }
 }

@@ -3,16 +3,16 @@
 <mapper namespace="com.pengzc.blog.mapper.BlogAboutMeMapper">
 
     <!-- 开启二级缓存 -->
- <!--   <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>-->
+    <!--   <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>-->
 
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="com.pengzc.blog.entity.BlogAboutMe">
-        <id column="id" property="id" />
-        <result column="name" property="name" />
-        <result column="introduction" property="introduction" />
-        <result column="qq_number" property="qqNumber" />
-        <result column="email" property="email" />
-        <result column="webchat_number" property="webchatNumber" />
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="introduction" property="introduction"/>
+        <result column="qq_number" property="qqNumber"/>
+        <result column="email" property="email"/>
+        <result column="webchat_number" property="webchatNumber"/>
     </resultMap>
 
     <!-- 通用查询结果列 -->

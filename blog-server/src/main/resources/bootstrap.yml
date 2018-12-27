@@ -4,7 +4,7 @@ spring:
     config:
       name: data
       profile: ${spring.profiles.active} # 要读取的配置文件profile属性
-#      uri: http://127.0.0.1:7001
+      #      uri: http://127.0.0.1:7001
       #label: ${spring.profiles.active}
       discovery:
         enabled: true                                 # 默认false，设为true表示使用注册中心中的configserver配置而不自己配置configserver的uri

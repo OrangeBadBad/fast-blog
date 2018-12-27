@@ -3,18 +3,18 @@
 <mapper namespace="com.pengzc.blog.mapper.SysMenuMapper">
 
     <!-- 开启二级缓存 -->
-<!--    <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>-->
+    <!--    <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>-->
 
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="com.pengzc.blog.entity.SysMenu">
-        <id column="id" property="id" />
-        <result column="parent_id" property="parentId" />
-        <result column="name" property="name" />
-        <result column="url" property="url" />
-        <result column="perms" property="perms" />
-        <result column="type" property="type" />
-        <result column="icon" property="icon" />
-        <result column="order_num" property="orderNum" />
+        <id column="id" property="id"/>
+        <result column="parent_id" property="parentId"/>
+        <result column="name" property="name"/>
+        <result column="url" property="url"/>
+        <result column="perms" property="perms"/>
+        <result column="type" property="type"/>
+        <result column="icon" property="icon"/>
+        <result column="order_num" property="orderNum"/>
     </resultMap>
 
     <!-- 通用查询结果列 -->

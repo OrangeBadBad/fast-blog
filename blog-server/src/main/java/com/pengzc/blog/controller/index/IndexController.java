@@ -10,22 +10,23 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * @ClassName IndexController
- * @Description
+ * @Description 首页
  * @Auth pengzc
  * @Date 2018/12/25
  **/
-@RequestMapping("/index")
 @Controller
+@RequestMapping("/index")
 public class IndexController {
 
     @Autowired
     private BlogUserService blogUserService;
 
-    @GetMapping("/home")
-    public String index(ModelMap modelMap){
-        BlogUser blogUser =  blogUserService.selectById(1);
 
-        modelMap.addAttribute("user",blogUser);
+    @GetMapping("/home")
+    public String index(ModelMap modelMap) {
+        BlogUser blogUser = blogUserService.selectById(1);
+
+        modelMap.addAttribute("user", blogUser);
         return "index";
     }
 }

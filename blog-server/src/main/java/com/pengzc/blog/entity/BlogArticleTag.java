@@ -5,11 +5,12 @@ import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.enums.IdType;
 import com.baomidou.mybatisplus.activerecord.Model;
+
 import java.io.Serializable;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author pengzc
@@ -78,10 +79,10 @@ public class BlogArticleTag extends Model<BlogArticleTag> {
     @Override
     public String toString() {
         return "BlogArticleTag{" +
-        "tagId=" + tagId +
-        ", tagName=" + tagName +
-        ", status=" + status +
-        ", highlight=" + highlight +
-        "}";
+                "tagId=" + tagId +
+                ", tagName=" + tagName +
+                ", status=" + status +
+                ", highlight=" + highlight +
+                "}";
     }
 }

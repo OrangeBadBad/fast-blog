@@ -1,11 +1,10 @@
-package com.pengzc.allcommon.utils;
+package com.pengzc.all.common.utils;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
  * @author pengzc
- *
  */
 public class StringUtil {
 

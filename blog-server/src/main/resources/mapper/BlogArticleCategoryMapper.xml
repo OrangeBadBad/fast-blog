@@ -3,14 +3,14 @@
 <mapper namespace="com.pengzc.blog.mapper.BlogArticleCategoryMapper">
 
     <!-- 开启二级缓存 -->
- <!--   <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>-->
+    <!--   <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>-->
 
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="com.pengzc.blog.entity.BlogArticleCategory">
-        <id column="category_id" property="categoryId" />
-        <result column="category_name" property="categoryName" />
-        <result column="parent_id" property="parentId" />
-        <result column="level_no" property="levelNo" />
+        <id column="category_id" property="categoryId"/>
+        <result column="category_name" property="categoryName"/>
+        <result column="parent_id" property="parentId"/>
+        <result column="level_no" property="levelNo"/>
     </resultMap>
 
     <!-- 通用查询结果列 -->

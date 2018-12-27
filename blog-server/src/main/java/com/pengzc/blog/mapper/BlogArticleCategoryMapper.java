@@ -6,7 +6,7 @@ import com.pengzc.blog.entity.BlogArticleCategory;
 
 /**
  * <p>
- *  Mapper 接口
+ * Mapper 接口
  * </p>
  *
  * @author pengzc123

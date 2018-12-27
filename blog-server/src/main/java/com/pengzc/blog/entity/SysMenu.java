@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.enums.IdType;
 import com.baomidou.mybatisplus.activerecord.Model;
+
 import java.io.Serializable;
 
 /**
@@ -125,14 +126,14 @@ public class SysMenu extends Model<SysMenu> {
     @Override
     public String toString() {
         return "SysMenu{" +
-        ", id=" + id +
-        ", parentId=" + parentId +
-        ", name=" + name +
-        ", url=" + url +
-        ", perms=" + perms +
-        ", type=" + type +
-        ", icon=" + icon +
-        ", orderNum=" + orderNum +
-        "}";
+                ", id=" + id +
+                ", parentId=" + parentId +
+                ", name=" + name +
+                ", url=" + url +
+                ", perms=" + perms +
+                ", type=" + type +
+                ", icon=" + icon +
+                ", orderNum=" + orderNum +
+                "}";
     }
 }

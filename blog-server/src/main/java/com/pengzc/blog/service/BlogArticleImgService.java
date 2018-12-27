@@ -6,7 +6,7 @@ import com.pengzc.blog.entity.BlogArticleImg;
 
 /**
  * <p>
- *  服务类
+ * 服务类
  * </p>
  *
  * @author pengzc123

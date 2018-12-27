@@ -1,4 +1,4 @@
-package com.pengzc.aliyunoss.util;
+package com.pengzc.all.common.utils;
 
 import com.aliyun.oss.ClientException;
 import com.aliyun.oss.OSSClient;
@@ -6,9 +6,7 @@ import com.aliyun.oss.OSSException;
 import com.aliyun.oss.model.DeleteObjectsRequest;
 import com.aliyun.oss.model.DeleteObjectsResult;
 import com.aliyun.oss.model.PutObjectRequest;
-import com.pengzc.allcommon.config.OssAliyunField;
-import com.pengzc.allcommon.utils.DateUtils;
-import com.pengzc.allcommon.utils.FileUtils;
+import com.pengzc.all.common.config.oss.OssAliyunConfig;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -21,24 +19,26 @@ import java.util.UUID;
 
 /**
  * OssUtil
+ *
  * @author pengzc
  * @create 2018-12-19 11:18
  * @desc 阿里云Oss工具类
  **/
 public class OssAliyunUtil {
 
-    @Resource(name="defaultOssAliyunField")
-    private OssAliyunField defaultOssAliyunField;
+    @Resource(name = "OssAliyunConf")
+    private OssAliyunConfig ossAliyunConfig;
 
     /**
      * 上传文件（选择默认的OSS配置）
+     *
      * @param file
      * @return
      */
     public String upload(MultipartFile file) {
         String url = null;
         try {
-            url = upload(defaultOssAliyunField, getKey(defaultOssAliyunField.getPrefix(), FileUtils.getSuffix(file)),
+            url = upload(ossAliyunConfig, getKey(ossAliyunConfig.getPrefix(), FileUtils.getSuffix(file)),
                     file.getInputStream());
         } catch (IOException e) {
             e.printStackTrace();
@@ -48,11 +48,12 @@ public class OssAliyunUtil {
 
     /**
      * 上传文件
+     *
      * @param ossAliyunField 配置类，不同的配置类上传的配置就不一样
      * @param file
      * @return
      */
-    public String upload(OssAliyunField ossAliyunField, MultipartFile file) {
+    public String upload(OssAliyunConfig ossAliyunField, MultipartFile file) {
         String url = null;
         try {
             url = upload(ossAliyunField, getKey(ossAliyunField.getPrefix(), FileUtils.getSuffix(file)),
@@ -65,6 +66,7 @@ public class OssAliyunUtil {
 
     /**
      * 上传文件<>基础方法</>
+     *
      * @param accessKeyId     授权 ID
      * @param accessKeySecret 授权密钥
      * @param bucketName      桶名
@@ -116,7 +118,7 @@ public class OssAliyunUtil {
      * @param inputStream 文件流
      * @return
      */
-    public String upload(OssAliyunField field, String key, InputStream inputStream) {
+    public String upload(OssAliyunConfig field, String key, InputStream inputStream) {
         return upload(field.getAccessKeyId(), field.getAccessKeySecret(), field.getBucketName(), field
                 .getEndPoint(), field.getStyleName(), key, inputStream);
     }
@@ -146,13 +148,14 @@ public class OssAliyunUtil {
      * @param field OSS相关配置
      * @param key   文件名
      */
-    public void delete(OssAliyunField field, String key) {
+    public void delete(OssAliyunConfig field, String key) {
         delete(field.getAccessKeyId(), field.getAccessKeySecret(), field.getBucketName(), field
                 .getEndPoint(), key);
     }
 
     /**
      * 删除多个文件<>基础方法</>
+     *
      * @param accessKeyId     授权 ID
      * @param accessKeySecret 授权密钥
      * @param bucketName      桶名
@@ -173,10 +176,11 @@ public class OssAliyunUtil {
 
     /**
      * 删除多个文件
+     *
      * @param field OSS相关配置
      * @param keys  多个文件名的集合
      */
-    public void delete(OssAliyunField field, List<String> keys) {
+    public void delete(OssAliyunConfig field, List<String> keys) {
         delete(field.getAccessKeyId(), field.getAccessKeySecret(), field.getBucketName(), field
                 .getEndPoint(), keys);
     }
@@ -185,6 +189,7 @@ public class OssAliyunUtil {
     /**
      * 获取文件名（bucket里的唯一key）
      * 上传和删除时除了需要bucketName外还需要此值
+     *
      * @param prefix 前缀（非必传），可以用于区分是哪个模块或子项目上传的文件
      * @param suffix 后缀（非必传）, 可以是 png jpg 等
      * @return

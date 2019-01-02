@@ -16,6 +16,7 @@
         <module>all-db-mysql</module>
         <module>all-db-redis</module>
         <module>all-db-mongodb</module>
+        <module>db-elasticsearch</module>
     </modules>
 
 

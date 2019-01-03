@@ -1,5 +1,7 @@
 package com.pengzc.all.common.exception;
 
+import com.pengzc.all.common.enums.BizExceptionEnum;
+
 /**
  * @ClassName BaseException
  * @Description
@@ -32,6 +34,12 @@ public class BaseException extends RuntimeException{
         super(msg, e);
         this.msg = msg;
         this.code = code;
+    }
+
+    public BaseException(BizExceptionEnum bizExceptionEnum) {
+        super(bizExceptionEnum.getMessage());
+        this.code = bizExceptionEnum.getCode();
+        this.msg = bizExceptionEnum.getMessage();
     }
 
     public String getMsg() {

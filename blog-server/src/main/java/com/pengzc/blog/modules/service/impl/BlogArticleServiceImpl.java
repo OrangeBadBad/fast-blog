@@ -4,9 +4,12 @@ package com.pengzc.blog.modules.service.impl;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.plugins.Page;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
+import com.pengzc.all.common.enums.BizExceptionEnum;
+import com.pengzc.all.common.exception.BaseException;
 import com.pengzc.blog.modules.entity.BlogArticle;
 import com.pengzc.blog.modules.mapper.BlogArticleMapper;
 import com.pengzc.blog.modules.service.BlogArticleService;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -17,7 +20,7 @@ import java.util.Map;
  * 服务实现类
  * </p>
  *
- * @author pengzc123
+ * @author pengzc
  * @since 2018-12-19
  */
 @Service
@@ -25,7 +28,11 @@ public class BlogArticleServiceImpl extends ServiceImpl<BlogArticleMapper, BlogA
 
     @Override
     public Page<BlogArticle> selectUserArticles( Map<String, Object> params) {
-        int pageNum =Integer.parseInt((String)params.get("page"));
+        String pageNumStr = (String)params.get("pageNum");
+        String pageSizeStr = (String)params.get("pageSize");
+        if(StringUtils.isBlank(pageNumStr)) throw new BaseException("pageNum 不能为空");
+        if(StringUtils.isBlank(pageSizeStr)) throw new BaseException("pageSize 不能为空");
+        int pageNum =Integer.parseInt(pageSizeStr);
         int pageSize = (int)params.get("pageSize");
         String userId = String.valueOf(params.get("userId"));
         Page<BlogArticle> page = new Page<BlogArticle>(pageSize,pageNum);

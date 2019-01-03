@@ -17,18 +17,17 @@
 package com.pengzc.all.dbmysql.utils;
 
 import com.baomidou.mybatisplus.plugins.Page;
-import io.renren.common.xss.SQLFilter;
-import org.apache.commons.lang.StringUtils;
 
+import org.apache.commons.lang.StringUtils;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
- * 查询参数
- *
- * @author Mark sunlightcs@gmail.com
- * @since 2.0.0 2017-03-14
- */
+ * @ClassName Query
+ * @Description  查询参数
+ * @Auth pengzc
+ * @Date 2018/12/1
+ **/
 public class Query<T> extends LinkedHashMap<String, Object> {
 	private static final long serialVersionUID = 1L;
     /**

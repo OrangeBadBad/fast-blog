@@ -1,17 +1,15 @@
 
 
-package com.pengzc.all.common.xss;
+package com.pengzc.all.dbmysql.utils;
 
-import com.pengzc.all.common.exception.BaseException;
 import org.apache.commons.lang.StringUtils;
 
 /**
- * SQL过滤
- *
- * @author chenshun
- * @email sunlightcs@gmail.com
- * @date 2017-04-01 16:16
- */
+ * @ClassName SQLFilter
+ * @Description  sql过滤
+ * @Auth pengzc
+ * @Date 2018/12/1
+ **/
 public class SQLFilter {
 
     /**
@@ -38,7 +36,7 @@ public class SQLFilter {
         //判断是否包含非法字符
         for (String keyword : keywords) {
             if (str.indexOf(keyword) != -1) {
-                throw new BaseException("包含非法字符");
+                throw new RuntimeException("包含非法字符");
             }
         }
 

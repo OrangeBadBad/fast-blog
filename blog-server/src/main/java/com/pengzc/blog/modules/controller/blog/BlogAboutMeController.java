@@ -27,7 +27,7 @@ public class BlogAboutMeController {
     private BlogAboutMeService blogAboutMeService;
 
     @RequestMapping("/getByUserId")
-    public @ResponseBody  Resp getByUserId(@RequestParam  String userId){
+    public @ResponseBody  Resp getByUserId(@RequestParam(value="userId",required=false)  String userId){
     return Resp.ok().put("aboutMe", blogAboutMeService.selectByUserId(userId));
     }
 

@@ -1,7 +1,7 @@
 package com.pengzc.blog.modules.service;
 
 
-import com.baomidou.mybatisplus.service.IService;
+import com.baomidou.mybatisplus.extension.service.IService;
 import com.pengzc.blog.modules.entity.BlogArticleImg;
 
 /**

@@ -6,7 +6,7 @@ import com.pengzc.blog.modules.mapper.SysMenuMapper;
 import com.pengzc.blog.modules.service.SysMenuService;
 
 
-import com.baomidou.mybatisplus.service.impl.ServiceImpl;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
 /**

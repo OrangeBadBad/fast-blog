@@ -3,7 +3,7 @@ package com.pengzc.blog.modules.service.impl;
 import com.pengzc.blog.modules.entity.BlogArticleTag;
 import com.pengzc.blog.modules.mapper.BlogArticleTagMapper;
 import com.pengzc.blog.modules.service.BlogArticleTagService;
-import com.baomidou.mybatisplus.service.impl.ServiceImpl;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
 /**

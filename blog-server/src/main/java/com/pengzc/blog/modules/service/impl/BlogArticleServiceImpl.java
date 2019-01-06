@@ -1,17 +1,15 @@
 package com.pengzc.blog.modules.service.impl;
 
 
-import com.baomidou.mybatisplus.mapper.EntityWrapper;
-import com.baomidou.mybatisplus.plugins.Page;
-import com.baomidou.mybatisplus.service.impl.ServiceImpl;
-import com.pengzc.all.common.enums.BizExceptionEnum;
+
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.pengzc.all.common.exception.BaseException;
 import com.pengzc.blog.modules.entity.BlogArticle;
 import com.pengzc.blog.modules.mapper.BlogArticleMapper;
 import com.pengzc.blog.modules.service.BlogArticleService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Map;
 
@@ -26,9 +24,9 @@ import java.util.Map;
 @Service
 public class BlogArticleServiceImpl extends ServiceImpl<BlogArticleMapper, BlogArticle> implements BlogArticleService {
 
-    @Override
-    public Page<BlogArticle> selectUserArticles( Map<String, Object> params) {
-        String pageNumStr = (String)params.get("pageNum");
+ /*   @Override
+    public Page<BlogArticle> selectUserArticles(Map<String, Object> params) {
+*//*        String pageNumStr = (String)params.get("pageNum");
         String pageSizeStr = (String)params.get("pageSize");
         if(StringUtils.isBlank(pageNumStr)) throw new BaseException("pageNum 不能为空");
         if(StringUtils.isBlank(pageSizeStr)) throw new BaseException("pageSize 不能为空");
@@ -37,9 +35,8 @@ public class BlogArticleServiceImpl extends ServiceImpl<BlogArticleMapper, BlogA
         String userId = String.valueOf(params.get("userId"));
         Page<BlogArticle> page = new Page<BlogArticle>(pageSize,pageNum);
         BlogArticle blogArticle = new BlogArticle();
-        blogArticle.setUserId(userId);
-        EntityWrapper<BlogArticle> entityWrapper = new EntityWrapper<BlogArticle>(blogArticle);
-        super.selectPage(page,entityWrapper);
-        return null;
-    }
+        blogArticle.setUserId(userId);*//*
+
+        return new Page<BlogArticle>();
+    }*/
 }

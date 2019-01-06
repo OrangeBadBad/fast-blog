@@ -16,8 +16,9 @@
 
 package com.pengzc.all.dbmysql.utils;
 
-import com.baomidou.mybatisplus.plugins.Page;
 
+
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.apache.commons.lang.StringUtils;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -69,8 +70,7 @@ public class Query<T> extends LinkedHashMap<String, Object> {
 
         //排序
         if(StringUtils.isNotBlank(sidx) && StringUtils.isNotBlank(order)){
-            this.page.setOrderByField(sidx);
-            this.page.setAsc("ASC".equalsIgnoreCase(order));
+            this.page.setAsc(sidx);
         }
 
     }

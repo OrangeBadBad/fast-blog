@@ -5,7 +5,7 @@ import com.pengzc.blog.modules.entity.BlogUser;
 import com.pengzc.blog.modules.mapper.BlogUserMapper;
 import com.pengzc.blog.modules.service.BlogUserService;
 
-import com.baomidou.mybatisplus.service.impl.ServiceImpl;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
 /**

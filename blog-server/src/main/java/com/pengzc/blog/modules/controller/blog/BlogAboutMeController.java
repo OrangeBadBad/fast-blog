@@ -1,8 +1,15 @@
 package com.pengzc.blog.modules.controller.blog;
 
 
+import com.pengzc.all.common.utils.Resp;
+import com.pengzc.blog.modules.entity.BlogAboutMe;
+import com.pengzc.blog.modules.service.BlogAboutMeService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+
 
 /**
  * <p>
@@ -15,6 +22,14 @@ import org.springframework.stereotype.Controller;
 @Controller
 @RequestMapping("/blogAboutMe")
 public class BlogAboutMeController {
+
+    @Autowired
+    private BlogAboutMeService blogAboutMeService;
+
+    @RequestMapping("/getByUserId")
+    public @ResponseBody  Resp getByUserId(@RequestParam  String userId){
+    return Resp.ok().put("aboutMe", blogAboutMeService.selectByUserId(userId));
+    }
 
 }
 

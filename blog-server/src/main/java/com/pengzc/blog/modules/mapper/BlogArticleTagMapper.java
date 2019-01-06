@@ -1,7 +1,7 @@
 package com.pengzc.blog.modules.mapper;
 
 import com.pengzc.blog.modules.entity.BlogArticleTag;
-import com.baomidou.mybatisplus.mapper.BaseMapper;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
  * <p>

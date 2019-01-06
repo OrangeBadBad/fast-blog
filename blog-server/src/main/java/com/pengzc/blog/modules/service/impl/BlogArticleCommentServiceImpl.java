@@ -1,7 +1,7 @@
 package com.pengzc.blog.modules.service.impl;
 
 
-import com.baomidou.mybatisplus.service.impl.ServiceImpl;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.pengzc.blog.modules.entity.BlogArticleComment;
 import com.pengzc.blog.modules.mapper.BlogArticleCommentMapper;
 import com.pengzc.blog.modules.service.BlogArticleCommentService;

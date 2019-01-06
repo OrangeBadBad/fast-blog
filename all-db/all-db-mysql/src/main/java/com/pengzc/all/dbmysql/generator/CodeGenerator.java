@@ -1,13 +1,14 @@
 package com.pengzc.all.dbmysql.generator;
 
-import com.baomidou.mybatisplus.enums.IdType;
-import com.baomidou.mybatisplus.exceptions.MybatisPlusException;
+
+import com.baomidou.mybatisplus.annotation.DbType;
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.generator.AutoGenerator;
 import com.baomidou.mybatisplus.generator.InjectionConfig;
 import com.baomidou.mybatisplus.generator.config.*;
 import com.baomidou.mybatisplus.generator.config.converts.MySqlTypeConvert;
 import com.baomidou.mybatisplus.generator.config.po.TableInfo;
-import com.baomidou.mybatisplus.generator.config.rules.DbType;
+
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 
 import java.sql.SQLException;
@@ -68,7 +69,7 @@ public class CodeGenerator {
         //3. 策略配置globalConfiguration中
         StrategyConfig stConfig = new StrategyConfig();
         stConfig.setCapitalMode(true) //全局大写命名
-                .setDbColumnUnderline(true)  // 指定表名 字段名是否使用下划线
+              //  .setDbColumnUnderline(true)  // 指定表名 字段名是否使用下划线
                 .setNaming(NamingStrategy.underline_to_camel) // 数据库表映射到实体的命名策略
                 //.setTablePrefix("tbl_")
                 .setInclude("blog_article_tag");  // 生成的表

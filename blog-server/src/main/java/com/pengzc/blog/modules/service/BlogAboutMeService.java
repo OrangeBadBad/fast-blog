@@ -1,7 +1,10 @@
 package com.pengzc.blog.modules.service;
 
+
 import com.pengzc.blog.modules.entity.BlogAboutMe;
-import com.baomidou.mybatisplus.service.IService;
+import com.baomidou.mybatisplus.extension.service.IService;
+
+
 
 /**
  * <p>
@@ -12,5 +15,12 @@ import com.baomidou.mybatisplus.service.IService;
  * @since 2018-12-25
  */
 public interface BlogAboutMeService extends IService<BlogAboutMe> {
+
+    /**
+     * 用户信息查询
+     * @param userId
+     * @return
+     */
+    public BlogAboutMe selectByUserId(String userId);
 
 }

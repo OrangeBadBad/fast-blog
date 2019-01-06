@@ -1,6 +1,7 @@
 package com.pengzc.blog.modules.service.impl;
 
-import com.baomidou.mybatisplus.mapper.EntityWrapper;
+
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.pengzc.blog.modules.entity.DemoEntity;
 import com.pengzc.blog.modules.mapper.DemoMapper;
 import com.pengzc.blog.modules.service.DemoService;
@@ -24,6 +25,6 @@ public class DemoServiceImpl implements DemoService {
 
     @Override
     public List<DemoEntity> getAll() {
-        return demoMapper.selectList(new EntityWrapper<DemoEntity>());
+        return demoMapper.selectList(new QueryWrapper<DemoEntity>());
     }
 }

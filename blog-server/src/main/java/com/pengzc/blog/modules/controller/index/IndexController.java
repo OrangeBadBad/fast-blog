@@ -28,7 +28,7 @@ public class IndexController {
 
     @GetMapping("/home")
     public String index(ModelMap modelMap){
-        BlogUser blogUser =  blogUserService.selectById(1);
+        BlogUser blogUser =  blogUserService.getById(1);
         modelMap.addAttribute("user",blogUser);
         return "index";
     }

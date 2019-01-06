@@ -1,7 +1,8 @@
 package com.pengzc.blog.modules.controller.blog;
 
 
-import com.baomidou.mybatisplus.plugins.Page;
+
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.pengzc.blog.modules.service.BlogArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -26,7 +27,7 @@ public class BlogArticleController {
 
     @RequestMapping (value="/getAll")
     public Page getAll(@RequestParam Map<String,Object> param){
-       return blogArticleService.selectUserArticles(param);
+       return null;
     }
 
 }

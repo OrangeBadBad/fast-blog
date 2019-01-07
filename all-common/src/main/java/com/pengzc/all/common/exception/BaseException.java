@@ -1,11 +1,14 @@
 package com.pengzc.all.common.exception;
 
+import com.pengzc.all.common.enums.BizExceptionEnum;
+
 /**
- * @author pengzc
- * @Description: 基础异常类
- * @date 2018/11/210:03
- */
-public class BaseException extends RuntimeException {
+ * @ClassName BaseException
+ * @Description
+ * @Auth pengzc
+ * @Date 2019/1/2
+ **/
+public class BaseException extends RuntimeException{
     private static final long serialVersionUID = 1L;
 
     private String msg;
@@ -31,6 +34,12 @@ public class BaseException extends RuntimeException {
         super(msg, e);
         this.msg = msg;
         this.code = code;
+    }
+
+    public BaseException(BizExceptionEnum bizExceptionEnum) {
+        super(bizExceptionEnum.getMessage());
+        this.code = bizExceptionEnum.getCode();
+        this.msg = bizExceptionEnum.getMessage();
     }
 
     public String getMsg() {

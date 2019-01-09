@@ -1,6 +1,7 @@
 package com.pengzc.blog.modules.service;
 
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.pengzc.blog.modules.entity.BlogArticle;
 
@@ -16,11 +17,11 @@ import java.util.Map;
  */
 public interface BlogArticleService extends IService<BlogArticle> {
 
-  /*  *//**
+   /* *
      * 用户文章分页查询
      * @param param
      * @return
-     *//*
-    public Page<BlogArticle> selectUserArticles(Map<String,Object> param);*/
+   * */
+   public IPage<BlogArticle> selectUserArticles(Map<String,Object> param);
 
 }

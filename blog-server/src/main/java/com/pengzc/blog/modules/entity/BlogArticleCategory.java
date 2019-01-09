@@ -25,6 +25,7 @@ public class BlogArticleCategory extends Model<BlogArticleCategory> {
     private String categoryName;
     private Integer parentId;
     private Integer levelNo;
+    private Integer top;
 
 
     public Integer getCategoryId() {
@@ -59,6 +60,15 @@ public class BlogArticleCategory extends Model<BlogArticleCategory> {
         this.levelNo = levelNo;
     }
 
+
+    public Integer getTop() {
+        return top;
+    }
+
+    public void setTop(Integer top) {
+        this.top = top;
+    }
+
     @Override
     protected Serializable pkVal() {
         return this.categoryId;
@@ -68,9 +78,10 @@ public class BlogArticleCategory extends Model<BlogArticleCategory> {
     public String toString() {
         return "BlogArticleCategory{" +
                 "categoryId=" + categoryId +
-                ", categoryName=" + categoryName +
+                ", categoryName='" + categoryName + '\'' +
                 ", parentId=" + parentId +
                 ", levelNo=" + levelNo +
-                "}";
+                ", top=" + top +
+                '}';
     }
 }
